@@ -8,9 +8,7 @@
 - CSS
 - Javascript
 
-## Live Demo
-
-[Live Demo Link](https://sediqullahbadakhsh.github.io/todo-list/)
+## Setup
 
 To get a local copy follow these simple example steps.
 
