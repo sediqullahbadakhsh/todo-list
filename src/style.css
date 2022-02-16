@@ -4,7 +4,6 @@ header {
   width: 100%;
   position: absolute;
   top: 0%;
-  width: 100%;
 }
 
 /* CONTAINER STARTS HERE */
@@ -24,19 +23,23 @@ body {
   background-color: white;
   box-shadow: 5px 5px 5px 5px gray;
 }
+
 button {
   border: none;
   background-color: white;
 }
+
 img {
   width: 20px;
   height: auto;
 }
+
 .dots {
   width: auto;
   height: 30px;
   padding-right: 10px;
 }
+
 .todo-header {
   display: flex;
   flex-direction: row;
@@ -46,11 +49,13 @@ img {
   border-bottom: solid 1px rgb(151, 151, 151);
   height: 40px;
 }
+
 h2 {
   font-size: 14px;
   font-weight: normal;
 }
-form {
+
+.row-input {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -63,16 +68,18 @@ form {
 input {
   border: none;
 }
+
 .todo-input {
   width: 100%;
 }
+
 .todo-container {
   display: flex;
   flex-direction: column;
   margin: 0;
 }
 
-.todo-task {
+.row-task {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,11 +87,19 @@ input {
   border-bottom: solid 1px rgb(151, 151, 151);
   height: 40px;
 }
+
 .task {
   gap: 5px;
   padding-left: 10px;
 }
-.clearbtn {
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.clear-completed {
   color: rgb(107, 107, 107);
   background-color: rgb(231, 231, 231);
   height: 40px;

@@ -7,41 +7,42 @@
   </head>
   <body>
     <header></header>
-
     <div class="main-container">
-      <div class="todo-header">
-        <h2>Todya's To Do</h2>
-        <button><img src="/src/refresh.png" alt="refresh button" /></button>
+      <div class="row todo-header">
+        <h2>Today's To Do</h2>
+        <button type="button">
+          <img src="/src/refresh.png" alt="refresh button" />
+        </button>
       </div>
-      <form>
+      <div class="row row-input">
         <input
           type="text"
           class="todo-input"
           placeholder="Add to your list..."
-          required
         />
-        <button class="todo-button" type="submit">
+        <button type="button" class="todo-button">
           <img src="/src/enter.png" alt="Enter Button" />
         </button>
-      </form>
-      <div class="todo-container">
-        <div class="row todo-task" draggable="true">
-          <div class="task">
-            <input type="checkbox" class="check" />
-            <input class="task-description" type="text" />
-          </div>
-          <img src="/src/dots.png" class="dots" alt="dots image" />
-        </div>
-        <div class="row todo-task" draggable="true">
-          <div class="task">
-            <input type="checkbox" class="check" />
-            <input class="task-description" type="text" />
-          </div>
-          <img src="/src/dots.png" class="dots" alt="dots image" />
-        </div>
       </div>
-      <button type="submit" class="clearbtn">Clear all completed</button>
+      <template id="task-template">
+        <div class="row row-task" draggable="true">
+          <div class="task">
+            <input type="checkbox" class="check" />
+            <input class="task-description" type="text" />
+          </div>
+          <div class="buttons">
+            <button class="delete-btn" type="button">&#128465;</button>
+            <button class="move-btn" type="button">
+              <img src="/src/dots.png" class="dots" alt="dots image" />
+            </button>
+          </div>
+        </div>
+      </template>
+      <div class="todo-container"></div>
+
+      <button type="button" class="clear-completed">Clear all completed</button>
     </div>
+
     <footer></footer>
   </body>
 </html>
