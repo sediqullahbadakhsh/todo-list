@@ -3,9 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wbpack Exercise</title>
+    <title>ToDo List</title>
   </head>
   <body>
-    <h1>Hello webpack!</h1>
+    <header></header>
+
+    <div class="main-container">
+      <div class="todo-header">
+        <h2>Todya's To Do</h2>
+        <button><img src="/src/refresh.png" alt="refresh button" /></button>
+      </div>
+      <form>
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="Add to your list..."
+          required
+        />
+        <button class="todo-button" type="submit">
+          <img src="/src/enter.png" alt="Enter Button" />
+        </button>
+      </form>
+      <div class="todo-container">
+        <div class="row todo-task" draggable="true">
+          <div class="task">
+            <input type="checkbox" class="check" />
+            <input class="task-description" type="text" />
+          </div>
+          <img src="/src/dots.png" class="dots" alt="dots image" />
+        </div>
+        <div class="row todo-task" draggable="true">
+          <div class="task">
+            <input type="checkbox" class="check" />
+            <input class="task-description" type="text" />
+          </div>
+          <img src="/src/dots.png" class="dots" alt="dots image" />
+        </div>
+      </div>
+      <button type="submit" class="clearbtn">Clear all completed</button>
+    </div>
+    <footer></footer>
   </body>
 </html>

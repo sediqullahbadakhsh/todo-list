@@ -1,24 +1,25 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# ToDo List
 
-# Awesome Books
-
-> In this project I am using ES6 Modules on creating favorite books where we can save our favorit books!
+> In this project, we can create our daily todo lists
 
 ## Built With
 
-- Javascript
 - HTML
 - CSS
+- Javascript
 
-## Live Demo
+To get a local copy follow these simple example steps.
 
-[Live Demo Link](https://sediqullahbadakhsh.github.io/awesome-book-module/)
+1.- Clone the repository using this command:  
+`git@github.com:sediqullahbadakhsh/todo-list.git`
 
-## Authors
+2.- To see the code open the project in your code editor of your preference.
 
-👤 **Sediqullahbadakhsh**
+## Author
 
-- GitHub: [@githubhandle](https://github.com/sediqullahbadakhsh)
+👤 **Victor Peralta**
+
+- GitHub: [@Badakhsh](https://github.com/sediqullahbadakhsh)
 
 ## 🤝 Contributing
 
@@ -30,6 +31,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- A special thank for @fernandorpm for this amazing [README template](https://github.com/microverseinc/readme-template)
