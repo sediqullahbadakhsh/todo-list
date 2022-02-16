@@ -12,9 +12,9 @@
 
 ## Live Demo
 
-[Live Demo Link](https://sediqullahbadakhsh.github.io/awesome-book-module/)
+[Live Demo Link](https://sediqullahbadakhsh.github.io/todo-list/)
 
-## Authors
+## Author
 
 👤 **Sediqullahbadakhsh**
 
