@@ -15,7 +15,6 @@ To get a local copy follow these simple example steps.
 1.- Clone the repository using this command:  
 `git@github.com:sediqullahbadakhsh/todo-list.git`
 
-2.- To see the code open the project in your code editor of your preference.
 
 ## Author
 
