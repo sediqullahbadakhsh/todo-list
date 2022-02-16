@@ -8,6 +8,10 @@
 - CSS
 - Javascript
 
+## Live Demo
+
+[Live Demo Link](https://sediqullahbadakhsh.github.io/todo-list/)
+
 To get a local copy follow these simple example steps.
 
 1.- Clone the repository using this command:  
@@ -17,7 +21,7 @@ To get a local copy follow these simple example steps.
 
 ## Author
 
-👤 **Victor Peralta**
+👤 **Sediqullah Badakhsh**
 
 - GitHub: [@Badakhsh](https://github.com/sediqullahbadakhsh)
 
