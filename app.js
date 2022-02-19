@@ -24,10 +24,7 @@ class App {
         } else {
           grandParent.querySelector('.task-description').style.textDecoration = 'none';
         }
-        this.taskList.updateTaskStatus(
-          grandParent.querySelector('.delete-btn').dataset.id,
-          e.target.checked,
-        );
+        this.taskList.updateTaskStatus(grandParent.querySelector('.delete-btn').dataset.id, e.target.checked);
       });
       descriptionInput.value = task.description;
       if (task.completed) {
@@ -47,8 +44,7 @@ class App {
       descriptionInput.addEventListener('blur', (e) => {
         const grandParent = e.target.parentNode.parentNode;
         grandParent.style.backgroundColor = 'inherit';
-        const index = e.target.parentNode.parentNode.querySelector('.delete-btn').dataset
-          .id;
+        const index = e.target.parentNode.parentNode.querySelector('.delete-btn').dataset.id;
         this.taskList.updateTaskDescription(index, e.target.value);
         setTimeout(() => {
           grandParent.querySelector('.delete-btn').style.display = 'none';
@@ -64,17 +60,15 @@ class App {
   }
 
   AddListeners() {
-    document
-      .querySelector('.row-input input')
-      .addEventListener('keypress', (e) => {
-        if (e.code === 'Enter') {
-          if (e.target.value === '') return;
-          this.taskList.addNewTask(e.target.value);
-          this.displayTaskCards();
-          e.target.value = '';
-          e.target.focus();
-        }
-      });
+    document.querySelector('.row-input input').addEventListener('keypress', (e) => {
+      if (e.code === 'Enter') {
+        if (e.target.value === '') return;
+        this.taskList.addNewTask(e.target.value);
+        this.displayTaskCards();
+        e.target.value = '';
+        e.target.focus();
+      }
+    });
     document.querySelector('.clear-completed').addEventListener('click', () => {
       this.taskList.clearAllCompleted();
       this.displayTaskCards();
