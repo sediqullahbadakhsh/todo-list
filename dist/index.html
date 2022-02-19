@@ -2,10 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wbpack Exercise</title>
-  <script defer src="/main.js"></script></head>
+    <title>ToDo List</title>
+  <script defer src="main.js"></script></head>
+
   <body>
-    <h1>Hello webpack!</h1>
+    <header></header>
+    <div class="main-container">
+      <div class="row row-header">
+        <p>Today's To Do</p>
+        <button type="button">
+          <img src="/src/refresh.png" alt="refresh button" />
+        </button>
+      </div>
+      <div class="row row-input">
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="Add to your list..."
+        />
+        <button type="button" class="todo-button">
+          <img src="/src/enter.png" alt="Enter Button" />
+        </button>
+      </div>
+      <template id="task-template">
+        <div class="row row-task" draggable="true">
+          <div class="task">
+            <input type="checkbox" class="check" />
+            <input class="task-description" type="text" />
+          </div>
+          <div class="buttons">
+            <button class="move-btn" type="button">
+              <img src="/src/dots.png" class="dots" alt="dots image" />
+            </button>
+            <button class="delete-btn" type="button">&#128465;</button>
+          </div>
+        </div>
+      </template>
+      <div class="task-container"></div>
+      <button type="button" class="clear-completed">Clear all completed</button>
+    </div>
+    <footer></footer>
   </body>
 </html>
